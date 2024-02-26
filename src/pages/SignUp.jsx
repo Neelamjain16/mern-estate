@@ -56,7 +56,7 @@ function SignUp() {
       </form>
       <div className='flex gap-2 mt-5'>
         <p>Have an Account?</p>
-        <Link to={"/sign-in"}>
+        <Link to={"/signin"}>
           <span className='text-blue-700'>Sign in</span>
         </Link>
       </div>
