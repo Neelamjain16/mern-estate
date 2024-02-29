@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { useRef } from 'react'
 import { useState, useEffect } from 'react';
@@ -130,6 +131,7 @@ function Profile() {
         <input type="email" placeholder='email' className='border p-3 rounded-lg' id='email'  defaultValue={currentUser.email} onChange={handleChange}/>
         <input type="text" placeholder='password' className='border p-3 rounded-lg' id='password' />
         <button disabled={loading} className='bg-slate-700 text-white rounded-lg p-3 uppercase hover:opacity-95 disabled:opacity-80'>{loading?'Loading...' :'Update'}</button>
+        <Link to={"/createlisting"} className='bg-green-700 text-white p-3 rounded-lg uppercase text-center hover:opacity-95'>Create Listing</Link>
       </form>
       <div className='flex justify-between mt-5'>
         <span className='text-red-700 cursor-pointer' onClick={handleDeleteUser}>Delete account</span>
