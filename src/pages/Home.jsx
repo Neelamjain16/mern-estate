@@ -7,3 +7,6 @@ function Home() {
 }
 
 export default Home
+
+
+// (INR/month)
